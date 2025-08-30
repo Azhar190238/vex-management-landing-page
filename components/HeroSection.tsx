@@ -15,10 +15,11 @@ export default function HeroSection() {
           <Image
             src="/logo.webp" // replace with your logo
             alt="Hone Coach"
-            width={50}
-            height={50}
+            width={300}
+            height={300}
+            className="w-[275px] h-[120px]"
           />
-          <span className="text-3xl font-bold">HONE COACH</span>
+    
         </div>
 
         {/* Headline */}
