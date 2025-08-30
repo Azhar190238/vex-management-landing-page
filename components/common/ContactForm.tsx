@@ -63,7 +63,7 @@ const ContactForm = ({ review = false }) => {
   };
 
   return (
-    <div className="bg-white text-gray-900 rounded-xl shadow-lg p-6 sm:p-8">
+    <div className=" max-w-7xl mx-auto text-[#fff] rounded-xl shadow-lg p-6 sm:p-8">
       <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mx-auto text-center font-bold mb-4">
         Get a FREE Quote 🚀
       </h3>
