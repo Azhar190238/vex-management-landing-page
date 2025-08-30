@@ -9,9 +9,9 @@ export default function ApplyButton() {
 
       {/* Button */}
       <Link href={"/booking"}>
-      <button
+      <p
         className="
-          px-12 py-5 rounded-lg 
+          px-12 py-7 relative top-4 rounded-lg cursor-pointer
           bg-[#007471] hover:bg-teal-600 
           text-white font-bold text-xl md:text-2xl lg:text-3xl tracking-wide
           shadow-lg shadow-teal-900/40
@@ -20,7 +20,7 @@ export default function ApplyButton() {
         "
       >
         APPLY NOW FOR FREE STRATEGY SESSION
-      </button>
+      </p>
       </Link>
 
       {/* Right Arrow */}
