@@ -1,8 +1,8 @@
 // components/StrategySession.tsx
 
+import Link from "next/link";
 import { cn } from "./lib/utils";
 import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
-
 
 export default function StrategySession() {
   return (
@@ -47,8 +47,8 @@ export default function StrategySession() {
                 No Sales Pressure
               </h3>
               <p className="text-teal-100 text-sm">
-                This is a genuine strategy session, not a sales call. You&apos;ll
-                get value whether we work together or not.
+                This is a genuine strategy session, not a sales call.
+                You&apos;ll get value whether we work together or not.
               </p>
             </div>
             <div className="bg-[#0f4f49] p-4 rounded-md">
@@ -84,17 +84,19 @@ export default function StrategySession() {
 
         {/* Guarantee Statement */}
         <p className="italic text-teal-200 text-center mt-6">
-          This guarantee exists because I&apos;ve never had a business owner leave
-          our call empty-handed. When you understand your numbers and see the
-          opportunities, the path forward becomes crystal clear.
+          This guarantee exists because I&apos;ve never had a business owner
+          leave our call empty-handed. When you understand your numbers and see
+          the opportunities, the path forward becomes crystal clear.
         </p>
 
         {/* CTA */}
-        <div className="flex justify-center mt-10">
-          <button className="bg-[#009688] hover:bg-[#00b8a9] text-white font-bold px-8 py-4 rounded-lg shadow-lg transition">
-            APPLY NOW FOR FREE STRATEGY SESSION
-          </button>
-        </div>
+        <Link href="/booking">
+          <div className="flex justify-center mt-10">
+            <button className="bg-[#009688] hover:bg-[#00b8a9] text-white font-bold px-8 py-4 rounded-lg shadow-lg transition">
+              APPLY NOW FOR FREE STRATEGY SESSION
+            </button>
+          </div>
+        </Link>
       </div>
     </section>
   );

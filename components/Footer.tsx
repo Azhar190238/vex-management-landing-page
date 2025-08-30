@@ -38,7 +38,7 @@ export default function Footer() {
 
         {/* CTA Button */}
         <Link
-          href="#"
+          href="/booking"
           className="bg-[#00B67A] hover:bg-green-600 text-black font-semibold px-6 py-3 rounded-lg inline-block transition mb-2"
         >
           APPLY NOW FOR FREE STRATEGY SESSION
