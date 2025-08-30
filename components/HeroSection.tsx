@@ -13,7 +13,7 @@ export default function HeroSection() {
         {/* Logo */}
         <div className="flex items-center justify-center gap-2 mb-6">
           <Image
-            src="/logo.svg" // replace with your logo
+            src="/logo.webp" // replace with your logo
             alt="Hone Coach"
             width={50}
             height={50}

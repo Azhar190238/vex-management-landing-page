@@ -43,7 +43,7 @@ export default function CoachSection() {
           {/* Profile Image */}
           <div className="relative w-60 h-60 rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/coach.jpg" // Replace with your image
+              src="/about.jpeg" // Replace with your image
               alt="Derrik Schweppe"
               fill
               className="object-cover"
