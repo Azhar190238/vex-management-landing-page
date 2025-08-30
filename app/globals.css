@@ -183,21 +183,95 @@ html {
   animation: bounce-slow 2s ease-in-out infinite;
 }
 
-@keyframes pulse-glow {
+@keyframes bgPulse {
   0% {
-    transform: scale(1);
-    opacity: 0.6;
+    background-color: #000000; /* black */
   }
   50% {
-    transform: scale(1.3);
-    opacity: 0;
+    background-color: #3333; /* gray-800 */
   }
   100% {
-    transform: scale(1);
-    opacity: 0;
+    background-color: #000000; /* back to black */
   }
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow var(--duration, 1.5s) infinite;
+@keyframes grayMove {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0.3;
+  }
+}
+
+@keyframes textPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+}
+
+.animate-bgPulse {
+  animation: bgPulse 6s ease-in-out infinite;
+}
+
+.animate-grayMove {
+  animation: grayMove 5s ease-in-out infinite;
+}
+
+.animate-textPulse {
+  animation: textPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes bounceLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-bounceLeft {
+  animation: bounceLeft 1.2s infinite ease-in-out;
+}
+
+.animate-bounceRight {
+  animation: bounceRight 1.2s infinite ease-in-out;
+}
+
+.animate-pulseScale {
+  animation: pulseScale 2s infinite ease-in-out;
 }
