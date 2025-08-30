@@ -1,4 +1,6 @@
 // components/Testimonials.tsx
+import { Rate } from "antd";
+import "antd/dist/reset.css"; // Ant Design styles
 import Image from "next/image";
 
 interface Testimonial {
@@ -7,6 +9,7 @@ interface Testimonial {
   initial: string;
   review: string;
   result?: string;
+  rating?: number; // Optional rating for each testimonial
 }
 
 const testimonials: Testimonial[] = [
@@ -17,6 +20,7 @@ const testimonials: Testimonial[] = [
     review:
       "I have been working with Derrik for a few years, and it's been an absolute game changer for my business. I had been in business for 10+ yrs before working with Hone Coach. I felt like I had hit a wall and couldn't grow anymore. Derrik taught me the importance of 'knowing my numbers'.",
     result: "Business Doubled in Size",
+    rating: 5,
   },
   {
     name: "Jamie",
@@ -24,6 +28,7 @@ const testimonials: Testimonial[] = [
     initial: "J",
     review:
       "I've spoken with several consultants, business owners and professionals and Derrik and Hone Coach has been by far the most helpful. He is very open and honest and as detailed or high level as needed with every question and concern. He's saved me time and money and foresaw potential issues that others didn't even think of.",
+    rating: 5,
   },
   {
     name: "Ogden Made",
@@ -31,6 +36,7 @@ const testimonials: Testimonial[] = [
     initial: "O",
     review:
       "I've just started with Hone Coach and I'm really excited about it. They have me moving in a thoughtful direction. They're helping me understand things about my business I haven't paid attention to and it's going to help make smarter moves this year. The biggest advantage I've seen so far is the guidance to improve in way more phases then just selling more.",
+    rating: 4.5,
   },
   {
     name: "Turf Elevated",
@@ -38,6 +44,7 @@ const testimonials: Testimonial[] = [
     initial: "T",
     review:
       "Derrik has been a joy to work with. He cares and isn't just checking the boxes like most coaches. He works to understand what our business is and does for our customers. With that information, he's been helping us improve many aspects of our business to improve more than just our revenue. He's helping us create a better experience for our customers and team!",
+    rating: 5,
   },
   {
     name: "Mark Schweppe",
@@ -45,6 +52,7 @@ const testimonials: Testimonial[] = [
     initial: "M",
     review:
       "Derrik was fun and knowledgeable and added depth to our monthly associates meeting! He walked our team through an excellent step by step process on utilizing existing sales stats and data to set appropriate goals based on an economic model, which was not only easily understood but also simple to integrate.",
+    rating: 5,
   },
   {
     name: "Frank S",
@@ -52,6 +60,7 @@ const testimonials: Testimonial[] = [
     initial: "F",
     review:
       "Derrik's coaching exemplified the core competencies of an effective Business Coach, providing me with a strong foundation that has enhanced my effectiveness across all organizations I've been a part of, including my current role.",
+    rating: 4.5,
   },
 ];
 
@@ -61,14 +70,13 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Trustpilot Header */}
         <div className="flex flex-col items-center mb-6">
-          <span className="text-green-600 font-semibold flex items-center gap-2">
+          <span className="text-[#00b67a] font-semibold flex items-center gap-2">
             Trustpilot
-            <Image
-              src="/stars.svg"
-              alt="Stars"
-              width={100}
-              height={20}
-              className="inline-block"
+            <Rate
+              allowHalf
+              disabled
+              defaultValue={4.6}
+              style={{ color: "#00b67a" }} // Green stars
             />
             <span className="text-black font-medium">4.6 / 5</span>
           </span>
@@ -86,12 +94,18 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left flex flex-col justify-between"
+              className="bg-white border-2 border-gray-200 hover:border-[#00b67a] rounded-2xl shadow-md p-6 text-left flex flex-col justify-between
+                         transform transition-transform duration-300 hover:scale-105"
             >
-              {/* Stars & Trustpilot Badge */}
+              {/* Rating */}
               <div className="flex items-center justify-between mb-4">
-                <Image src="/stars.svg" alt="Stars" width={80} height={16} />
-                <span className="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded">
+                <Rate
+                  allowHalf
+                  disabled
+                  defaultValue={t.rating}
+                  style={{ color: "#16a34a" }} // Green stars
+                />
+                <span className="bg-[#00b67a] text-white text-xs font-semibold px-2 py-1 rounded">
                   Trustpilot
                 </span>
               </div>
@@ -101,17 +115,18 @@ export default function Testimonials() {
 
               {/* Optional Business Result */}
               {t.result && (
-                <div className="border border-green-500 rounded-md p-3 mb-4">
+                <div className="border-l-4 border-l-[#00b67a] bg-gray-200 rounded-md p-3 mb-4">
                   <p className="text-sm text-gray-600 font-medium">
                     Business Growth Result:
                   </p>
-                  <p className="text-green-600 font-semibold">{t.result}</p>
+                  <p className="text-[#00b67a] font-semibold">{t.result}</p>
                 </div>
               )}
 
               {/* Author */}
-              <div className="flex items-center gap-3 mt-auto">
-                <div className="w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full font-bold">
+              <hr />
+              <div className="flex mt-4 items-center gap-3">
+                <div className="w-10 h-10 bg-[#00b67a] text-white flex items-center justify-center rounded-full font-bold">
                   {t.initial}
                 </div>
                 <div>
