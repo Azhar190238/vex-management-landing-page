@@ -56,7 +56,6 @@ export default function BusinessFramework() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
           Risk-Free Guarantee
         </h2>
@@ -77,7 +76,6 @@ export default function BusinessFramework() {
                   step.number === 2 ? "#000" : "rgba(0, 128, 128, 0.5)",
               }}
             >
-              {/* Step Number Badge */}
               <div
                 className={`absolute -top-6 left-1/2 -translate-x-1/2 w-10 h-10 ${
                   step.number === 2 ? "bg-[#161617]" : "bg-[#14878C]"
