@@ -6,102 +6,92 @@ export default function ServicesSection() {
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
-          Real Business Owners, Real Transformations
+          The Construction Growth System
         </h2>
         <p className="mt-6 text-lg sm:text-xl text-[#156D6A]">
-          See how business owners like you escaped the 70-hour work week trap
+          Our proven 3-pillar system has helped construction businesses generate
+          consistent pipelines and scale beyond word-of-mouth dependency.
         </p>
       </div>
 
-      {/* Top stats */}
+      {/* Top Stats / Guarantee Section */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-        <div className="bg-[#006E6B] hover:bg-[#007471] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 lg:p-8 text-center font-bold text-xl shadow-lg">
-          <span className="text-3xl md:text-4xl lg:text-5xl">41.6k+</span>
-          <p className="text-lg  font-normal mt-4">Coaching Calls Completed</p>
+        <div className="bg-[#006E6B] hover:bg-[#007471] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 lg:p-8 text-center shadow-lg">
+          <h3 className="text-4xl font-extrabold mb-2">30%+</h3>
+          <p className="text-lg font-medium">Revenue Increase</p>
+          <p className="text-sm mt-2">Guaranteed in 30-60 days</p>
         </div>
-        <div className="bg-black hover:bg-[#003333] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 text-center font-bold text-xl shadow-lg">
-          <span className="text-3xl md:text-4xl lg:text-5xl">34.7%</span>
-          <p className="text-lg  font-normal mt-4">
-            Average Annual Growth Rate
-          </p>
+
+        <div className="bg-[#006E6B] hover:bg-[#007471] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 lg:p-8 text-center shadow-lg">
+          <h3 className="text-4xl font-extrabold mb-2">📈</h3>
+          <p className="text-lg font-medium">Acquisition Engine</p>
+          <p className="text-sm mt-2">Targeted Lead Generation</p>
         </div>
-        <div className="bg-[#006E6B] hover:bg-[#007471] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 text-center font-bold text-xl shadow-lg">
-          <span className="text-3xl md:text-4xl lg:text-5xl">28.4%</span>
-          <p className="text-lg  font-normal mt-4">
-            Average Workload Reduction
-          </p>
+
+        <div className="bg-[#006E6B] hover:bg-[#007471] hover:scale-105 transition-all duration-500 text-white rounded-lg p-6 lg:p-8 text-center shadow-lg">
+          <h3 className="text-4xl font-extrabold mb-2">🤝</h3>
+          <p className="text-lg font-medium">Growth Partner</p>
+          <p className="text-sm mt-2">Hands-On Support & Consulting</p>
         </div>
       </div>
 
-      {/* Stories */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Card 1 */}
-        <div className="border-2 hover:scale-105 transition-all duration-500 border-[#006663] rounded-lg p-6 bg-white shadow-md pb-10">
-          <p className="inline-block relative -top-9 bg-[#006663] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            LANDSCAPING
+      {/* 3-Pillar System Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Pillar 1 */}
+        <div className="border-2 hover:scale-105 transition-all duration-500 border-[#006663] rounded-lg p-6 bg-white shadow-md">
+          <h3 className="text-xl font-bold mb-4 text-[#006663]">
+            Acquisition Engine
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Content, ads, creative, and tracking tailored specifically for
+            construction professionals. No more generic marketing that doesn’t
+            work in your industry.
           </p>
-          <p className="text-lg text-gray-700 mb-4">
-            After 20 years of carrying debt on a rolling credit line, we paid
-            off $65,000 in the first 6 months of working with Derrik. The
-            clarity on our numbers changed everything.
-          </p>
-          <div className="bg-teal-700 text-white text-base md:text-lg font-bold px-4 py-3 rounded-xl">
-            Debt Eliminated: $65,000 in 6 months
-          </div>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li>Industry-specific ad campaigns</li>
+            <li>Content that speaks construction</li>
+            <li>Advanced tracking systems</li>
+          </ul>
         </div>
 
-        <div className="border-2 hover:scale-105 transition-all duration-500 border-black rounded-lg p-6 bg-white shadow-md pb-10">
-          <p className="inline-block relative -top-9 bg-black text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            HVAC COMPANY
+        {/* Pillar 2 */}
+        <div className="border-2 hover:scale-105 transition-all duration-500 border-black rounded-lg p-6 bg-white shadow-md">
+          <h3 className="text-xl font-bold mb-4 text-black">
+            Conversion & Retention Systems
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Landing pages, workflows, and follow-ups designed for construction
+            buyers. We know how your clients make decisions.
           </p>
-          <p className="text-lg text-gray-700 mb-4">
-            I called Derrik because I hated my life and my business. I was
-            making $170K working 80 hours a week. Now I’m on track for $2M
-            revenue this year working 30 hours per week.
-          </p>
-          <div className="bg-black text-white text-base md:text-lg font-bold px-4 py-3 rounded-xl">
-            Revenue: $170K → $2M | Hours: 80/week → 30/week
-          </div>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li>High-converting landing pages</li>
+            <li>Automated follow-up sequences</li>
+            <li>Client retention systems</li>
+          </ul>
         </div>
 
-        {/* Card 3 */}
-
-        <div className="border-2 hover:scale-105 transition-all duration-500 border-[#006663] rounded-lg p-6 bg-white shadow-md pb-10">
-          <p className="inline-block relative -top-9 bg-[#006663] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            CONSTRUCTION
+        {/* Pillar 3 */}
+        <div className="border-2 hover:scale-105 transition-all duration-500 border-[#006663] rounded-lg p-6 bg-white shadow-md">
+          <h3 className="text-xl font-bold mb-4 text-[#006663]">
+            Consulting & Growth Partnering
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Weekly updates, direct consulting, and hands-on growth support. We
+            become your growth partner, not just another vendor.
           </p>
-          <p className="text-lg text-gray-700 mb-4">
-            We went from $2M revenue with $200K profit to $6M revenue with $1.2M
-            profit. Not by working more hours, but by finally understanding our
-            business metrics.
-          </p>
-          <div className="bg-[#006663] text-white text-base md:text-lg font-bold px-4 py-3 rounded-xl">
-            Revenue: $2M → $6M | Profit: $200K → $1.2M
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div className="border-2 hover:scale-105 transition-all duration-500 border-black rounded-lg p-6 bg-white shadow-md pb-10">
-          <p className="inline-block relative -top-9 bg-black text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            HOME SERVICES AVERAGE
-          </p>
-          <p className="text-lg text-gray-700 mb-4">
-            Our home services clients consistently outperform industry standards
-            with a 34.7% average annual growth rate compared to the typical
-            8-11% industry benchmark. This represents 3x higher growth through
-            data-driven business strategies.
-          </p>
-          <div className="bg-black text-white text-base md:text-lg font-bold px-4 py-3 rounded-xl">
-            Growth Rate: 34.7% vs 8-11% Industry Standard
-          </div>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li>Weekly strategy sessions</li>
+            <li>Direct access to experts</li>
+            <li>Ongoing optimization</li>
+          </ul>
         </div>
       </div>
 
       {/* Footer Note */}
       <div className="text-center text-lg bg-gray-100 rounded-lg p-4 lg:p-8 text-gray-500 mt-8">
         <p className="text-[#006663] font-medium">
-          Results are not typical. Individual results may vary based on effort,
-          commitment, and implementation of strategies.
+          Designed exclusively for construction businesses that want to grow
+          predictably — without relying on word-of-mouth.
         </p>
       </div>
     </section>

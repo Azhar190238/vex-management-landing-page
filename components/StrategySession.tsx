@@ -1,9 +1,16 @@
 // components/StrategySession.tsx
-
 import Link from "next/link";
 import { cn } from "./lib/utils";
 import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import ApplyButton from "./ApplyButton";
+import {
+  HardHat,
+  Settings,
+  BookOpen,
+  BarChart3,
+  Zap,
+  Workflow,
+} from "lucide-react";
 
 export default function StrategySession() {
   return (
@@ -25,73 +32,107 @@ export default function StrategySession() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-white">
-        {/* Main Card */}
-        <div className="bg-[#2B6A68] border-2 border-[#007471] rounded-xl p-8 text-center shadow-lg">
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4">
-            Zero-Risk Strategy Session Guarantee
-          </h2>
-          <p className="text-teal-100 mb-6 text-lg font-semibold">
-            I guarantee you&apos;ll walk away with at least one actionable
-            insight worth $10,000+ in <br /> potential revenue.
-          </p>
-
-          <div className="bg-[#205656] border-l-4 border-[#007471] rounded-2xl  text-lg p-8 mb-6 font-medium">
-            If you don&apos;t get concrete, implementable strategies from our
-            30-minute call, I&apos;ll personally send you $100 for wasting your
-            time.
-          </div>
-
-          {/* Two Columns */}
-          <div className="grid gap-4 md:grid-cols-2 text-left">
-            <div className="bg-[#0f4f49] p-4 rounded-md">
-              <h3 className="text-lg md:text-xl font-semibold text-teal-200">
-                No Sales Pressure
-              </h3>
-              <p className="text-teal-100 text-base lg:text-lg">
-                This is a genuine strategy session, not a sales call.
-                You&apos;ll get value whether we work together or not.
-              </p>
-            </div>
-            <div className="bg-[#0f4f49] p-4 rounded-md">
-              <h3 className="text-lg md:text-xl font-semibold text-teal-200">
-                Complete Confidentiality
-              </h3>
-              <p className="text-teal-100 text-base lg:text-lg">
-                Your business information stays private. I&apos;ve worked with
-                Fortune 500 companies – your secrets are safe.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* What You'll Walk Away With */}
-        <div className="bg-[#155452] border-2 border-[#007471] bg-opacity-80 rounded-xl p-8 mt-8 text-center shadow-lg">
-          <h3 className="text-xl lg:text-2xl font-bold mb-6">
-            What You&apos;ll Walk Away With
-          </h3>
-          <div className="grid gap-4 md:grid-cols-2 text-base text-left">
-            <ul className="list-disc list-inside space-y-1">
-              <li>Identify your top 3 growth opportunities</li>
-              <li>3 specific areas to focus on first</li>
-              <li>Roadmap for your next 90 days</li>
-            </ul>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Key metrics you should be tracking</li>
-              <li>Your biggest growth opportunity</li>
-              <li>Action steps you can start immediately</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Guarantee Statement */}
-        <p className="italic bg-[#155452] border-2 border-[#007471] bg-opacity-80 rounded-xl p-8 text-white text-center mt-6">
-          This guarantee exists because I&apos;ve never had a business owner
-          leave our call empty-handed. When you understand your numbers and see
-          the opportunities, the path forward becomes crystal clear.
+        {/* Section Title */}
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8">
+          Why Construction Businesses{" "}
+          <span className="text-[#0AAA78]">Choose Vex Management</span>
+        </h2>
+        <p className="text-gray-300 text-lg max-w-3xl mx-auto text-center mb-12">
+          Most agencies don't understand construction. They know how to run ads
+          but not how to target the right buyers or speak your language. <br />
+          <span className="text-[#0AAA78] font-semibold">We're different.</span>
         </p>
 
+        {/* 4 Cards - Why Choose Us */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-16">
+          <div className="bg-[#0f4f49] p-6 rounded-xl hover:bg-[#12615b] transition shadow-lg text-center">
+            <HardHat className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h3 className="text-lg font-semibold mb-2">
+              5+ Years in Construction
+            </h3>
+            <p className="text-gray-300 text-sm">
+              We've studied and worked in the construction industry. We
+              understand how projects are won and how your clients think.
+            </p>
+          </div>
+          <div className="bg-[#0f4f49] p-6 rounded-xl hover:bg-[#12615b] transition shadow-lg text-center">
+            <Settings className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h3 className="text-lg font-semibold mb-2">
+              Industry-Specific Systems
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Our systems are templated but tailored to your brand. No generic
+              agency approaches that fail in construction.
+            </p>
+          </div>
+          <div className="bg-[#0f4f49] p-6 rounded-xl hover:bg-[#12615b] transition shadow-lg text-center">
+            <BookOpen className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h3 className="text-lg font-semibold mb-2">
+              We Speak Construction
+            </h3>
+            <p className="text-gray-300 text-sm">
+              No agency jargon. We understand your language, your challenges,
+              and your clients' decision-making process.
+            </p>
+          </div>
+          <div className="bg-[#0f4f49] p-6 rounded-xl hover:bg-[#12615b] transition shadow-lg text-center">
+            <BarChart3 className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h3 className="text-lg font-semibold mb-2">Proven Track Record</h3>
+            <p className="text-gray-300 text-sm">
+              We use a proven 3-step process we've implemented for similar
+              businesses before. Systems that actually work.
+            </p>
+          </div>
+        </div>
+
+        {/* The Vex Management Difference */}
+        <h3 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          The <span className="text-[#0AAA78]">Vex Management</span> Difference
+        </h3>
+        <div className="grid gap-6 md:grid-cols-3 mb-16">
+          <div className="bg-[#155452] p-6 rounded-xl hover:bg-[#1a6662] transition text-center">
+            <Zap className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h4 className="text-lg font-semibold mb-2">
+              Industry Knowledge + Marketing Systems
+            </h4>
+            <p className="text-gray-300 text-sm">
+              We merge deep construction insight with proven marketing systems
+              so growth sticks.
+            </p>
+          </div>
+          <div className="bg-[#155452] p-6 rounded-xl hover:bg-[#1a6662] transition text-center">
+            <Workflow className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h4 className="text-lg font-semibold mb-2">Built-In Automations</h4>
+            <p className="text-gray-300 text-sm">
+              Reduce manual chasing with systems that work 24/7 to nurture and
+              convert leads.
+            </p>
+          </div>
+          <div className="bg-[#155452] p-6 rounded-xl hover:bg-[#1a6662] transition text-center">
+            <BarChart3 className="h-10 w-10 mx-auto text-[#0AAA78] mb-3" />
+            <h4 className="text-lg font-semibold mb-2">Proven Playbooks</h4>
+            <p className="text-gray-300 text-sm">
+              Cut wasted ad spend with playbooks tested specifically in the
+              construction space.
+            </p>
+          </div>
+        </div>
+
+        {/* Mission Statement */}
+        <div className="flex flex-col items-center justify-center">
+          <blockquote className="bg-[#12433f] border-l-4 mx-auto border-[#0AAA78] text-center text-xl md:text-2xl font-semibold italic px-6 py-8 rounded-xl max-w-3xl">
+            "Make profitable, sustainable growth the default, not the exception
+            for construction businesses."
+            <footer className="text-gray-400 mt-4">
+              — Vex Management Team
+            </footer>
+          </blockquote>
+        </div>
+
         {/* CTA */}
-        <ApplyButton/>
+        <div className="text-center mt-10">
+          <ApplyButton />
+        </div>
       </div>
     </section>
   );

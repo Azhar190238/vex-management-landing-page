@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Anton, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import BonusHeader from "../components/Navbar";
+import BonusHeader from "../components/Header";
+import Navbar from "@/components/Nabvar";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -19,8 +20,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Hone Coach | business Coach for enterprenures",
-  description: "Hone Coach | business Coach for enterprenures",
+  title: "Vex Management",
+  description: "vex Groth engine Management",
 };
 
 export default function RootLayout({
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html>
       <body className={`${anton.variable} ${openSans.variable} antialiased`}>
         <BonusHeader />
+        <Navbar/>
         {children}
         <Footer />
       </body>

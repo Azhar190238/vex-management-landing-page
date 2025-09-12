@@ -1,9 +1,5 @@
 // components/BusinessFramework.tsx
-import {
-  LucideChartNoAxesCombined,
-  LucideSettings,
-  LucideRocket,
-} from "lucide-react";
+import { LucideBadgeDollarSign, LucideTrendingUp, LucideRocket } from "lucide-react";
 
 interface Step {
   number: number;
@@ -17,41 +13,41 @@ interface Step {
 const steps: Step[] = [
   {
     number: 1,
-    icon: <LucideChartNoAxesCombined className="w-12 h-12 text-teal-600" />,
-    title: "DIAGNOSE",
-    subtitle: "Financial Clarity & Metrics",
+    icon: <LucideBadgeDollarSign className="w-12 h-12 text-teal-600" />,
+    title: "$100 CASH PROMISE",
+    subtitle: "We'll Pay If We Can't Deliver",
     description:
-      "Get crystal clear on your numbers. We identify exactly where your business is profitable, where it's bleeding money, and the key metrics that drive growth.",
+      "If we can't find strategies to increase your revenue by 30%, we'll give you $100 cash for your time — no strings attached.",
     points: [
-      "Know your true profit margins",
-      "Track the right KPIs",
-      "Stop guessing, start measuring",
+      "Free audit of your current systems",
+      "Identify 30%+ growth potential",
+      "You get paid if we can’t find it",
     ],
   },
   {
     number: 2,
-    icon: <LucideSettings className="w-12 h-12 text-teal-600" />,
-    title: "SYSTEMATIZE",
-    subtitle: "Operations & Team Leverage",
+    icon: <LucideTrendingUp className="w-12 h-12 text-teal-600" />,
+    title: "REVENUE GUARANTEE",
+    subtitle: "We Work Until You Grow",
     description:
-      "Build systems that run without you. Create processes, hire the right people, and establish accountability structures that keep everything running smoothly.",
+      "If we don't increase your revenue by at least 30%, we'll continue working with you for free until we hit that target.",
     points: [
-      "Document core processes",
-      "Hire and train A-players",
-      "Create accountability systems",
+      "Zero-risk partnership",
+      "Performance-based commitment",
+      "Pay only when results are proven",
     ],
   },
   {
     number: 3,
     icon: <LucideRocket className="w-12 h-12 text-teal-600" />,
-    title: "SCALE",
-    subtitle: "Predictable Growth Without More Hours",
+    title: "FAST RESULTS",
+    subtitle: "Growth Within 30-60 Days",
     description:
-      "Now your business grows automatically. With systems in place and team accountability, you can focus on strategy while revenue increases predictably.",
+      "See 20-30 qualified leads and measurable revenue growth within 30-60 days of implementing our strategies.",
     points: [
-      "Consistent monthly growth",
-      "Work 30 hours per week",
-      "Business runs without you",
+      "Rapid lead generation system",
+      "Track results in real-time",
+      "Quick revenue impact",
     ],
   },
 ];
@@ -60,20 +56,22 @@ export default function BusinessFramework() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
+        {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
-          The 3-Step Business Freedom Framework
+          Risk-Free Guarantee
         </h2>
         <p className="text-teal-600 text-lg font-medium mt-4 mb-12">
-          The exact system I used to go from 70-hour weeks to 30-hour weeks{" "}
+          We're so confident, we'll pay YOU if we can't deliver results.
           <br />
-          while doubling revenue
+          The construction industry's strongest guarantee.
         </p>
 
+        {/* 3-Step Grid */}
         <div className="grid gap-8 md:grid-cols-3 mt-6">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="relative border-2 hover:scale-105 transition-all duration-500 rounded-xl pt-16 pb-8  px-6 shadow-sm flex flex-col items-center text-center"
+              className="relative border-2 hover:scale-105 transition-all duration-500 rounded-xl pt-16 pb-8 px-6 shadow-sm flex flex-col items-center text-center"
               style={{
                 borderColor:
                   step.number === 2 ? "#000" : "rgba(0, 128, 128, 0.5)",
@@ -100,9 +98,9 @@ export default function BusinessFramework() {
 
               {/* Points */}
               <div
-                className={`bg-gray-50  border-l-4 ${
-                  step.number === 2 ? "border-[#161617]" : " border-[#14878C]"
-                }  rounded-2xl  p-4 text-left w-full max-w-xs mx-auto`}
+                className={`bg-gray-50 border-l-4 ${
+                  step.number === 2 ? "border-[#161617]" : "border-[#14878C]"
+                } rounded-2xl p-4 text-left w-full max-w-xs mx-auto`}
               >
                 {step.points.map((point, i) => (
                   <p key={i} className="text-gray-700 text-base">
@@ -112,6 +110,12 @@ export default function BusinessFramework() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <p className="text-white p-6 bg-red-900 text-lg font-semibold  rounded-xl">
+          No contracts. No commitments. Just results — or you get paid.
+        </p>
         </div>
       </div>
     </section>

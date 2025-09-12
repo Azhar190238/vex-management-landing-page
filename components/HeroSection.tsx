@@ -28,22 +28,14 @@ export default function HeroSection() {
 
       <div className="relative max-w-[1320px] mx-auto text-center">
         {/* Logo */}
-        <div className="flex items-center justify-center gap-2 mb-6">
-          <Image
-            src="/logo.webp"
-            alt="Hone Coach"
-            width={300}
-            height={300}
-            className="w-[200px] md:w-[250px] lg:w-[285px] h-[100px] md:h-[120px] lg:h-[130px]"
-          />
-        </div>
 
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold leading-tight break-words">
-          STOP WORKING 60+ HOURS A WEEK JUST TO STAY AFLOAT
+          STOP CHASING JOBS. START{" "}
+          <span className="text-[#F3CF06]">SCALING PROFITS.</span>
         </h1>
         <p className="mt-4 text-lg md:text-2xl lg:text-3xl italic text-teal-100 mx-auto">
-          Discover the 3 Hidden Numbers Every Business Owner Must Know to Turn
-          Their Company Into a Predictable Profit Machine
+          We help 6–7 figure construction businesses build predictable growth
+          systems that deliver 30%+ revenue increases in 30-60 days
         </p>
 
         <div className="max-w-[600px] h-[2px] bg-white/70 mx-auto mt-6 mb-10"></div>
