@@ -27,7 +27,7 @@ export default function Navbar({
                   src={logoSrc}
                   alt={logoAlt}
                   width={200}
-                  height={100}
+                  height={80}
                   priority
                   className="object-contain"
                 />
@@ -35,8 +35,6 @@ export default function Navbar({
               
             </Link>
           </div>
-
-          {/* Right: Desktop button and mobile hamburger */}
           <div className="flex items-center gap-4">
             {/* Desktop button */}
             <div className="">
